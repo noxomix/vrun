@@ -12,8 +12,8 @@ module vtf8
 pub fn bytes_to_rune(byte_array []u8) !rune {
         mut first_byte := byte_array[0]
         mut num_bytes := get_num_bytes(byte_array)!
-
         mut codepoint := u32(first_byte & (0xFF >> (num_bytes + 1)))
+	
         for i := 1; i < num_bytes; i++ {
                 if (byte_array[i] & 0xC0) != 0x80 {
                         return error('3')
