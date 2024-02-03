@@ -5,7 +5,7 @@ a rune. An utf-8 symbol (rune) can consist of up to 4 bytes.
 
 
 ### QUICK START:
-To install the module simply time: 
+To install the module simply type: 
 ```bash
 v install noxomix.vtf8
 ```
